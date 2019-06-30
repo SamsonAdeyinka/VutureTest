@@ -6,13 +6,15 @@ public class Task2 {
 		
 		String rev = "";
 		int length = str.length();
-		for (int i = length - 1; i >= 0; i--)
+		for (int i = length - 1; i >= 0; i--) {
 			rev = rev + str.charAt(i);
+		}
 		
-		if (str.equals(rev))
+		if (str.equals(rev)) {
 			return true;
-		else
+		} else {
 			return false;
+		}
 	}
 	
 	public static void main(String[] args) {

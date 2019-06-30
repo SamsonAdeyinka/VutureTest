@@ -6,8 +6,9 @@ public class Task1 {
 
 		int occ = 0;
 		for (int i = 0; i < str.length(); i++) {
-			if (str.charAt(i) == letter)
+			if (str.charAt(i) == letter) {
 				occ++;
+			}
 		}
 		return occ;
 	}
@@ -22,7 +23,7 @@ public class Task1 {
 		char letter = scan.nextLine().toLowerCase().charAt(0);
 
 		System.out.println("The letter " + letter + " occurs " + occur(str, letter) + " times.");
-
+		scan.close();
 	}
 
 }
