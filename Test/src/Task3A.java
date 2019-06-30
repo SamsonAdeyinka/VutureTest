@@ -1,5 +1,5 @@
 
-public class Task3 {
+public class Task3A {
 
 	public static void main(String[] args) {
 
