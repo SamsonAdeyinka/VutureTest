@@ -1,21 +1,27 @@
+import java.util.Scanner;
 
 public class TaskA {
 	
-	public static int occur(String s, char c) {
+	public static int occur(String str, char letter) {
 
-		int res = 0;
-		for (int i = 0; i < s.length(); i++) {
-			if (s.charAt(i) == c)
-				res++;
+		int occ = 0;
+		for (int i = 0; i < str.length(); i++) {
+			if (str.charAt(i) == letter)
+				occ++;
 		}
-		return res;
+		return occ;
 	}
 
 	public static void main(String[] args) {
 		
-		String str = "Samson Adeyinka";
-		char c = 'a';
-		System.out.println(occur(str, c));
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter sentence or word: ");
+		String str = scan.nextLine().toLowerCase();
+		
+		System.out.println("Enter a letter: ");
+		char letter = scan.nextLine().toLowerCase().charAt(0);
+		
+		System.out.println("The letter " + letter + " occurs " + occur(str, letter) + " times.");
 		
 	}
 
