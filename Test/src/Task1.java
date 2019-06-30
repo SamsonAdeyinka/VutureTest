@@ -22,7 +22,7 @@ public class Task1 {
 		char letter = scan.nextLine().toLowerCase().charAt(0);
 
 		System.out.println("The letter " + letter + " occurs " + occur(str, letter) + " times.");
-		scan.close();
+
 	}
 
 }
