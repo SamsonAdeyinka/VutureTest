@@ -1,20 +1,8 @@
 import java.util.HashMap;
-import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Scanner;
 
 public class Task3A {
-
-	static int occur(String str, String censor) {
-		String a[] = str.split(" ");
-		String b[] = censor.split(", ");
-
-		int count = 0;
-		for (int i = 0; i < a.length; i++) {
-			if (censor.equals(a[i]))
-				count++;
-		}
-		return count;
-	}
 
 	static void counter(String input, String censor) {
 		HashMap<String, Integer> strCount = new HashMap<String, Integer>();
@@ -32,7 +20,7 @@ public class Task3A {
 				}
 			}
 		}
-		for (Map.Entry entry : strCount.entrySet()) {
+		for (Entry<String, Integer> entry : strCount.entrySet()) {
 			System.out.println(entry.getKey() + " occurs: " + entry.getValue() + " times");
 		}
 
