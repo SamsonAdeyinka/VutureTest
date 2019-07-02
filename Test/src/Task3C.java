@@ -1,3 +1,7 @@
+/**
+ * Create a way to censor a single word palindrome in a text.
+ */
+
 import java.util.Scanner;
 
 public class Task3C {

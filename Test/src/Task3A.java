@@ -1,3 +1,7 @@
+/**
+ * Create a function which counts the number of occurrences of words from a "censored words list" in a text.
+ */
+
 import java.util.HashMap;
 import java.util.Map.Entry;
 import java.util.Scanner;
@@ -27,19 +31,19 @@ public class Task3A {
 	} 
 
 	public static void main(String[] args) {
-		
+
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Enter sentence or word: ");
 		String str = scan.nextLine().toLowerCase();
 
 		System.out.println("Enter words you'll like to censor (use commers): ");
 		String censor = scan.nextLine().toLowerCase();
-		
+
 		counter(str, censor);
-		
+
 		scan.close();
-		
-		
+
+
 
 
 	}

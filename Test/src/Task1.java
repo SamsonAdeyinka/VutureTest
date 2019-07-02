@@ -1,9 +1,12 @@
+/**
+ * Create a function which counts the number of occurrences of a given letter in a string.
+ */
+
 import java.util.Scanner;
 
 public class Task1 {
 
 	public static int occur(String str, char letter) {
-
 		int occ = 0;
 		for (int i = 0; i < str.length(); i++) {
 			if (str.charAt(i) == letter) {
